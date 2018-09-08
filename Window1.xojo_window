@@ -9,7 +9,7 @@ Begin Window Window1
    FullScreen      =   False
    FullScreenButton=   False
    HasBackColor    =   False
-   Height          =   578
+   Height          =   574
    ImplicitInstance=   True
    LiveResize      =   True
    MacProcID       =   0
@@ -26,7 +26,7 @@ Begin Window Window1
    Title           =   "Test Postfix"
    Visible         =   True
    Width           =   832
-   Begin TextField TextField1
+   Begin TextField ExpressionField
       AcceptTabs      =   False
       Alignment       =   0
       AutoDeactivate  =   True
@@ -57,7 +57,7 @@ Begin Window Window1
       TabIndex        =   0
       TabPanelIndex   =   0
       TabStop         =   True
-      Text            =   ""
+      Text            =   "2{m/s}"
       TextColor       =   &c00000000
       TextFont        =   "System"
       TextSize        =   0.0
@@ -67,7 +67,7 @@ Begin Window Window1
       Underline       =   False
       UseFocusRing    =   True
       Visible         =   True
-      Width           =   560
+      Width           =   473
    End
    Begin PushButton PushButton1
       AutoDeactivate  =   True
@@ -77,7 +77,7 @@ Begin Window Window1
       Caption         =   "Do Process"
       Default         =   True
       Enabled         =   True
-      Height          =   20
+      Height          =   34
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
@@ -165,7 +165,7 @@ Begin Window Window1
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   110
+      Top             =   118
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -182,7 +182,7 @@ Begin Window Window1
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
-      Left            =   242
+      Left            =   216
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -200,76 +200,13 @@ Begin Window Window1
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   78
+      Top             =   79
       Transparent     =   False
       Underline       =   False
       Visible         =   True
-      Width           =   100
+      Width           =   87
    End
-   Begin Label LAError
-      AutoDeactivate  =   True
-      Bold            =   False
-      DataField       =   ""
-      DataSource      =   ""
-      Enabled         =   True
-      Height          =   20
-      HelpTag         =   ""
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Italic          =   False
-      Left            =   242
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      Multiline       =   False
-      Scope           =   0
-      Selectable      =   False
-      TabIndex        =   6
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Text            =   ""
-      TextAlign       =   0
-      TextColor       =   &c00000000
-      TextFont        =   "System"
-      TextSize        =   0.0
-      TextUnit        =   0
-      Top             =   97
-      Transparent     =   False
-      Underline       =   False
-      Visible         =   True
-      Width           =   327
-   End
-   Begin Canvas Canvas1
-      AcceptFocus     =   False
-      AcceptTabs      =   False
-      AutoDeactivate  =   True
-      Backdrop        =   0
-      DoubleBuffer    =   False
-      Enabled         =   True
-      EraseBackground =   True
-      Height          =   412
-      HelpTag         =   ""
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      Scope           =   0
-      TabIndex        =   7
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Top             =   142
-      Transparent     =   True
-      UseFocusRing    =   True
-      Visible         =   True
-      Width           =   473
-   End
-   Begin TextArea TextArea1
+   Begin TextArea ErrorBox
       AcceptTabs      =   False
       Alignment       =   0
       AutoDeactivate  =   True
@@ -286,7 +223,7 @@ Begin Window Window1
       HideSelection   =   True
       Index           =   -2147483648
       Italic          =   False
-      Left            =   375
+      Left            =   315
       LimitText       =   0
       LineHeight      =   0.0
       LineSpacing     =   1.0
@@ -315,7 +252,7 @@ Begin Window Window1
       Underline       =   False
       UseFocusRing    =   True
       Visible         =   True
-      Width           =   450
+      Width           =   510
    End
    Begin Canvas FormattedExpression
       AcceptFocus     =   False
@@ -325,11 +262,11 @@ Begin Window Window1
       DoubleBuffer    =   False
       Enabled         =   True
       EraseBackground =   True
-      Height          =   418
+      Height          =   411
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
-      Left            =   581
+      Left            =   132
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -339,11 +276,11 @@ Begin Window Window1
       TabIndex        =   9
       TabPanelIndex   =   0
       TabStop         =   True
-      Top             =   142
+      Top             =   143
       Transparent     =   True
       UseFocusRing    =   True
       Visible         =   True
-      Width           =   240
+      Width           =   680
    End
    Begin Label Label4
       AutoDeactivate  =   True
@@ -356,7 +293,7 @@ Begin Window Window1
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
-      Left            =   650
+      Left            =   505
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -374,7 +311,7 @@ Begin Window Window1
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   110
+      Top             =   118
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -383,7 +320,7 @@ Begin Window Window1
    Begin CheckBox CheckBox1
       AutoDeactivate  =   True
       Bold            =   False
-      Caption         =   "center lines visible"
+      Caption         =   "center lines"
       DataField       =   ""
       DataSource      =   ""
       Enabled         =   True
@@ -392,7 +329,7 @@ Begin Window Window1
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
-      Left            =   592
+      Left            =   704
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -406,27 +343,151 @@ Begin Window Window1
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   43
+      Top             =   41
       Transparent     =   True
       Underline       =   False
       Value           =   False
       Visible         =   True
-      Width           =   166
+      Width           =   89
    End
-   Begin PopupMenu PopupMenu1
+   Begin PopupMenu ViewModeChanger
       AutoDeactivate  =   True
       Bold            =   False
       DataField       =   ""
       DataSource      =   ""
       Enabled         =   True
-      Height          =   20
+      Height          =   25
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
-      InitialValue    =   "Select:\nMove\nDecompose"
+      InitialValue    =   ""
       Italic          =   False
-      Left            =   500
+      Left            =   505
       ListIndex       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      Scope           =   0
+      TabIndex        =   12
+      TabPanelIndex   =   0
+      TabStop         =   True
+      TextFont        =   "Consolas"
+      TextSize        =   0.0
+      TextUnit        =   0
+      Top             =   42
+      Transparent     =   False
+      Underline       =   False
+      Visible         =   True
+      Width           =   179
+   End
+   Begin Canvas Canvas1
+      AcceptFocus     =   False
+      AcceptTabs      =   False
+      AutoDeactivate  =   True
+      Backdrop        =   0
+      DoubleBuffer    =   False
+      Enabled         =   True
+      EraseBackground =   True
+      Height          =   412
+      HelpTag         =   ""
+      Index           =   -2147483648
+      InitialParent   =   ""
+      Left            =   132
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      Scope           =   0
+      TabIndex        =   7
+      TabPanelIndex   =   0
+      TabStop         =   True
+      Top             =   142
+      Transparent     =   True
+      UseFocusRing    =   True
+      Visible         =   True
+      Width           =   361
+   End
+   Begin PushButton PushButton2
+      AutoDeactivate  =   True
+      Bold            =   False
+      ButtonStyle     =   "0"
+      Cancel          =   False
+      Caption         =   "Circle"
+      Default         =   True
+      Enabled         =   True
+      Height          =   50
+      HelpTag         =   ""
+      Index           =   7
+      InitialParent   =   ""
+      Italic          =   False
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      Scope           =   0
+      TabIndex        =   13
+      TabPanelIndex   =   0
+      TabStop         =   True
+      TextFont        =   "Consolas"
+      TextSize        =   0.0
+      TextUnit        =   0
+      Top             =   504
+      Transparent     =   False
+      Underline       =   False
+      Visible         =   True
+      Width           =   100
+   End
+   Begin PushButton PushButton2
+      AutoDeactivate  =   True
+      Bold            =   False
+      ButtonStyle     =   "0"
+      Cancel          =   False
+      Caption         =   "Rectangle"
+      Default         =   True
+      Enabled         =   True
+      Height          =   50
+      HelpTag         =   ""
+      Index           =   6
+      InitialParent   =   ""
+      Italic          =   False
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      Scope           =   0
+      TabIndex        =   14
+      TabPanelIndex   =   0
+      TabStop         =   True
+      TextFont        =   "Consolas"
+      TextSize        =   0.0
+      TextUnit        =   0
+      Top             =   451
+      Transparent     =   False
+      Underline       =   False
+      Visible         =   True
+      Width           =   100
+   End
+   Begin PushButton PushButton2
+      AutoDeactivate  =   True
+      Bold            =   False
+      ButtonStyle     =   "0"
+      Cancel          =   False
+      Caption         =   "Ray"
+      Default         =   True
+      Enabled         =   True
+      Height          =   50
+      HelpTag         =   ""
+      Index           =   4
+      InitialParent   =   ""
+      Italic          =   False
+      Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -436,29 +497,29 @@ Begin Window Window1
       TabIndex        =   15
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
+      TextFont        =   "Consolas"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   663
-      Transparent     =   True
+      Top             =   398
+      Transparent     =   False
       Underline       =   False
-      Visible         =   False
-      Width           =   80
+      Visible         =   True
+      Width           =   100
    End
-   Begin PopupMenu functionMenu
+   Begin PushButton PushButton2
       AutoDeactivate  =   True
       Bold            =   False
-      DataField       =   ""
-      DataSource      =   ""
+      ButtonStyle     =   "0"
+      Cancel          =   False
+      Caption         =   "Line"
+      Default         =   True
       Enabled         =   True
-      Height          =   20
+      Height          =   50
       HelpTag         =   ""
-      Index           =   -2147483648
+      Index           =   5
       InitialParent   =   ""
-      InitialValue    =   "Select: \nsin\ntan\ncos\nlog\nsqrt\nabs\narctan\narcsin\narccos"
       Italic          =   False
-      Left            =   400
-      ListIndex       =   0
+      Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -468,29 +529,29 @@ Begin Window Window1
       TabIndex        =   16
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
+      TextFont        =   "Consolas"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   663
-      Transparent     =   True
+      Top             =   345
+      Transparent     =   False
       Underline       =   False
-      Visible         =   False
-      Width           =   80
+      Visible         =   True
+      Width           =   100
    End
-   Begin PopupMenu mainMenu
+   Begin PushButton PushButton2
       AutoDeactivate  =   True
       Bold            =   False
-      DataField       =   ""
-      DataSource      =   ""
+      ButtonStyle     =   "0"
+      Cancel          =   False
+      Caption         =   "Expression"
+      Default         =   True
       Enabled         =   True
-      Height          =   20
+      Height          =   50
       HelpTag         =   ""
-      Index           =   -2147483648
+      Index           =   3
       InitialParent   =   ""
-      InitialValue    =   "Select:\nApply function \nInsert in both sides\nPerform computations"
       Italic          =   False
-      Left            =   283
-      ListIndex       =   0
+      Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -500,29 +561,29 @@ Begin Window Window1
       TabIndex        =   17
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
+      TextFont        =   "Consolas"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   663
-      Transparent     =   True
+      Top             =   293
+      Transparent     =   False
       Underline       =   False
-      Visible         =   False
-      Width           =   80
+      Visible         =   True
+      Width           =   100
    End
-   Begin PopupMenu insertionMenu
+   Begin PushButton PushButton2
       AutoDeactivate  =   True
       Bold            =   False
-      DataField       =   ""
-      DataSource      =   ""
+      ButtonStyle     =   "0"
+      Cancel          =   False
+      Caption         =   "Text"
+      Default         =   True
       Enabled         =   True
-      Height          =   20
+      Height          =   50
       HelpTag         =   ""
-      Index           =   -2147483648
+      Index           =   2
       InitialParent   =   ""
-      InitialValue    =   "Select: \nAdd X to both sides \nSubtract X from both sides \nMultiply X with both sides \nDivide both sides by X\nRaise both sides to the power of X"
       Italic          =   False
-      Left            =   162
-      ListIndex       =   0
+      Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -532,72 +593,61 @@ Begin Window Window1
       TabIndex        =   18
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
+      TextFont        =   "Consolas"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   663
-      Transparent     =   True
+      Top             =   242
+      Transparent     =   False
       Underline       =   False
-      Visible         =   False
-      Width           =   80
+      Visible         =   True
+      Width           =   100
    End
-   Begin TextField insertField
-      AcceptTabs      =   False
-      Alignment       =   0
+   Begin PushButton PushButton2
       AutoDeactivate  =   True
-      AutomaticallyCheckSpelling=   False
-      BackColor       =   &cFFFFFF00
       Bold            =   False
-      Border          =   True
-      CueText         =   ""
-      DataField       =   ""
-      DataSource      =   ""
+      ButtonStyle     =   "0"
+      Cancel          =   False
+      Caption         =   "Erase"
+      Default         =   True
       Enabled         =   True
-      Format          =   ""
-      Height          =   22
+      Height          =   50
       HelpTag         =   ""
-      Index           =   -2147483648
+      Index           =   1
+      InitialParent   =   ""
       Italic          =   False
-      Left            =   321
-      LimitText       =   0
+      Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
-      Mask            =   ""
-      Password        =   False
-      ReadOnly        =   False
       Scope           =   0
       TabIndex        =   19
       TabPanelIndex   =   0
       TabStop         =   True
-      Text            =   ""
-      TextColor       =   &c00000000
-      TextFont        =   "System"
+      TextFont        =   "Consolas"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   619
-      Transparent     =   True
+      Top             =   191
+      Transparent     =   False
       Underline       =   False
-      UseFocusRing    =   True
-      Visible         =   False
-      Width           =   67
+      Visible         =   True
+      Width           =   100
    End
-   Begin PushButton insertButton
+   Begin PushButton PushButton2
       AutoDeactivate  =   True
       Bold            =   False
       ButtonStyle     =   "0"
       Cancel          =   False
-      Caption         =   "OK"
+      Caption         =   "Move"
       Default         =   True
       Enabled         =   True
-      Height          =   20
+      Height          =   50
       HelpTag         =   ""
-      Index           =   -2147483648
+      Index           =   0
       InitialParent   =   ""
       Italic          =   False
-      Left            =   387
+      Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -607,125 +657,49 @@ Begin Window Window1
       TabIndex        =   20
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
+      TextFont        =   "Consolas"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   619
-      Transparent     =   True
+      Top             =   142
+      Transparent     =   False
       Underline       =   False
-      Visible         =   False
-      Width           =   40
+      Visible         =   True
+      Width           =   100
    End
 End
 #tag EndWindow
 
 #tag WindowCode
+	#tag Event
+		Sub Open()
+		  Select Case viewMode
+		  Case 0
+		    canvas1.Visible = false
+		    FormattedExpression.Visible = true
+		  Case 1
+		    canvas1.Visible = true
+		    FormattedExpression.Visible = false
+		  End
+		End Sub
+	#tag EndEvent
+
+
+	#tag Note, Name = Window1 Controls
+		Window1.Open fires as soon as the window loads, so you can govern all interactions within that event handler method.
+		
+	#tag EndNote
+
+
 	#tag Property, Flags = &h0
-		binaryOpSelected As boolean = false
+		drawingMode As Integer
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
-		current As PhEd.Expression
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		drag As boolean
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		draggedExpression As PhEd.Expression
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		draggedText As Text
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		drag_X As double
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		drag_Y As double
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		equalSign_X As double
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		equalSign_Y As double
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		Equation As phED.Equation
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		ExceptionType As Integer = 0
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		Expression As PhEd.Expression
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		Found As boolean = false
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		functionSelected As boolean
+		ExeptionType As Integer = 0
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
 		inBounds As boolean = true
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		isAddition As boolean = false
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		isADrag As Boolean
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		isDivision As boolean = false
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		isLeft As Boolean = false
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		isMultiplication As boolean = false
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		isSubtraction As boolean = false
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		left2right As boolean
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		mainSelected As boolean = false
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		menu_X As double
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		menu_Y As double
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		move As boolean = false
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		onTopOf As PhEd.Expression
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
@@ -737,19 +711,19 @@ End
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
-		selectedExpr As PhEd.Expression
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
 		showAxes As Integer
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
-		showMenu As boolean = false
+		theExpr As PhEd.Expression
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
-		theExpr As PhEd.Expression
+		Untitled As Integer
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		viewMode As Integer = 0
 	#tag EndProperty
 
 
@@ -758,52 +732,22 @@ End
 #tag Events PushButton1
 	#tag Event
 		Sub Action()
-		  // Invalidate the two canvases
-		  ExceptionType = 6
-		  if TextField1.Text.toText <> "" then
-		    if isEquation(TextField1.Text.toText) then
-		      Equation = Text2Equation(TextField1.Text.ToText)
-		      Expression = nil
-		    else 
-		      Expression = Text2Expression(TextField1.Text.toText)
-		      Equation = nil
-		    end if
-		    Canvas1.Invalidate
-		    FormattedExpression.Invalidate
-		  end if
-		  binaryOpSelected = false 
-		  drag = false 
-		  mainSelected = false 
-		  showMenu = false
-		  showMenu(0)
+		  Canvas1.Invalidate  
+		  FormattedExpression.invalidate
 		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events Canvas1
-	#tag Event
-		Sub Paint(g As Graphics, areas() As REALbasic.Rect)
-		  if not isEquation(TextField1.Text.ToText) then
-		    if Window1.ExceptionType < 6 then 
-		      if TextField1.Text.toText = "" then Window1.ExceptionType = -1
-		      DrawException
-		    else
-		      DrawTree(g, Expression)
-		      TextArea1.Text = ""
-		    end if
-		  else 
-		    DrawTree(g, Equation.getRight)
-		    TextArea1.Text = ""
-		  end if
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events FormattedExpression
 	#tag Event
 		Sub Paint(g As Graphics, areas() As REALbasic.Rect)
+		  g.forecolor=&cFFFFFF
+		  g.fillrect(0,0,g.width,g.height)
+		  
 		  //Frame the canvas
 		  g.forecolor=&c000000
 		  g.drawrect(0,0,g.width,g.height)
+		  
 		  
 		  //Establish the point in the canvas
 		  //from which to start drawing the
@@ -827,6 +771,7 @@ End
 		    primeMeridian.X2= xCoordinateOfCenter
 		    primeMeridian.Y2 = FormattedExpression.Height
 		    g.DrawObject(primeMeridian)
+		    
 		    equator.X = 0
 		    equator.Y = yCoordinateOfCenter
 		    equator.X2 = FormattedExpression.Width
@@ -840,142 +785,65 @@ End
 		  //this program reads the user input
 		  //in TextField1.
 		  Try
-		    //This condition avoids a Nil error 
+		    
+		    //This condition avoids a Nil error
 		    //if the program opens and nothing
 		    //is in TextField1
-		    
-		    if isEquation(TextField1.Text.toText)  then
-		      if Window1.ExceptionType = 6 then 
-		        Equation.SetParentheses
-		        Equation.SetScale(scaleFactor)
-		        Equation.Draw(g, xStartPoint, yStartPoint)
-		        checkMargins
-		        TextArea1.Text = ""
+		    If ExpressionField.Text <> "" Then   
+		      'dim v as new PhEd.Vector
+		      'v.Append(new PhEd.ScalarLiteral("100"))
+		      'dim t as Text = "12+"
+		      'v.Append(new PhEd.ScalarBinaryOperator((t)))
+		      'v.Append(new PhEd.ScalarLiteral("3000"))
+		      'v.Append(new PhEd.ScalarLiteral("30"))
+		      
+		      
+		      Dim topNode As PhEd.Expression //topNode will store the top node of the expression tree
+		      Window1.ExeptionType = 5
+		      topNode = Text2Expression(ExpressionField.Text.ToText,g)   //parses TextField1.Text into an expression tree
+		      if not topNode.isLegal  or Window1.ExeptionType < 5 then //then we have an exception
+		        DrawException(g)
 		      else 
-		        if TextField1.Text.toText = "" then Window1.ExceptionType = -1
-		        DrawException
-		      end if
-		      if popupmenu1.visible = true then
-		        showMenu(3)
-		        popupmenu1.Left = FormattedExpression.Left + Menu_X
-		        popupmenu1.Top = FormattedExpression.Top + Menu_Y
-		      elseif mainMenu.visible = true then 
-		        showMenu(2)
-		        mainMenu.Left = FormattedExpression.Left + Menu_X
-		        mainMenu.Top = FormattedExpression.Top + Menu_Y
-		      elseif functionMenu.visible = true then 
-		        showMenu(1)
-		        functionMenu.Left = FormattedExpression.Left + Menu_X
-		        functionMenu.Top = FormattedExpression.Top + Menu_Y
-		      elseif insertionMenu.Visible = true then 
-		        showMenu(4)
-		        insertionMenu.Left = FormattedExpression.Left + Menu_X
-		        insertionMenu.Top = FormattedExpression.Top + Menu_Y
-		      elseif insertField.Visible = true then 
-		        showMenu(5) 
-		        insertField.Left = FormattedExpression.Left + Menu_X
-		        insertField.Top = FormattedExpression.Top + Menu_Y
-		        insertButton.Left = insertField.Left + insertField.Width
-		        insertButton.Top = insertField.Top
-		      else
-		        showMenu(0)
-		      end if
-		      if drag then
-		        //dim t as PhEd.TextItemShape = new PhEd.TextItemShape(g, draggedText ,scaleFactor)
-		        //t.Draw(g,drag_X,drag_Y)
-		        draggedExpression.Draw(g,drag_X,drag_Y)
-		      else
+		        //Set up the parentheses flags.
+		        topNode.SetParentheses
+		        //SetScale sets the scale of all items
+		        //in the expression.
+		        topNode.SetScale(scaleFactor)
+		        topNode.Draw(g, xStartPoint, yStartPoint)
 		        
-		      end if
+		        //v.Draw(g, xStartPoint, yStartPoint)
+		        
+		        if outOfBounds then // if it is out of bounds, rescale and refresh
+		          scaleFactor = scaleFactor * 0.8
+		          FormattedExpression.Refresh
+		        elseif inBounds and scaleFactor < 1/0.8 then // if it is too small, rescale and refresh
+		          //scaleFactor = scaleFactor * 1/0.8
+		          FormattedExpression.Refresh
+		        end if
+		        ErrorBox.Text = ""
+		      end if 
+		      
 		    else 
-		      if Window1.ExceptionType = 6 then 
-		        Expression.SetParentheses
-		        Expression.SetScale(scaleFactor)
-		        Expression.Draw(g, xStartPoint, yStartPoint)
-		        checkMargins
-		        TextArea1.Text = ""
-		      else 
-		        if TextField1.Text.toText = "" then Window1.ExceptionType = -1
-		        DrawException
-		      end if
-		    end if 
+		      Window1.ExeptionType = -1 // if the text field is empty then handle exception
+		      DrawException(g)
+		    end if
+		    
 		  Catch err As PhEd.ExpressionException
 		    
 		    MsgBox err.Message
 		    
 		  End Try
-		  move = false
+		End Sub
+	#tag EndEvent
+	#tag Event
+		Sub MouseDrag(X As Integer, Y As Integer)
+		  
 		End Sub
 	#tag EndEvent
 	#tag Event
 		Function MouseDown(X As Integer, Y As Integer) As Boolean
-		  // determine whether the click is a right or left click and then either 
-		  // select it and open the window if it is a right click
-		  // or allow for drag in case it is a regular left click
-		  if Equation <> nil and Equation.isLegal then
-		    dim leftList() as PhEd.Expression = Equation.getLeft.getList 
-		    dim rightList() as PhEd.Expression = Equation.getRight.getList 
-		    for i as integer = 0 to leftList.ubound 
-		      leftList(i).selected = false
-		    next
-		    for i as integer = 0 to rightList.ubound 
-		      rightList(i).selected = false
-		    next
-		    // right click
-		    if IsContextualClick then
-		      showMenu(0)
-		      dim left as PhEd.Expression = Equation.GetLeft
-		      dim right as PhEd.Expression = Equation.GetRight 
-		      findSelected(left.GetList,X,Y)
-		      findSelected(right.GetList,X,Y)
-		      FormattedExpression.Invalidate
-		      return false
-		      // left click
-		    else
-		      isADrag = false
-		      dim left as PhEd.Expression = Equation.GetLeft
-		      dim right as PhEd.Expression = Equation.GetRight 
-		      findDragged(left.getList, X, Y)
-		      findDragged(right.getList, X, Y)
-		      clearList(left.getList,current)
-		      clearList(right.getList,current)
-		      return isADrag
-		    end if
-		  end if
+		  
 		End Function
-	#tag EndEvent
-	#tag Event
-		Sub MouseDrag(X As Integer, Y As Integer)
-		  // while a term is dragged, continuously invalidate the canvas
-		  drag = true
-		  drag_X = X
-		  drag_Y = Y
-		  FormattedExpression.Invalidate
-		End Sub
-	#tag EndEvent
-	#tag Event
-		Sub MouseUp(X As Integer, Y As Integer)
-		  // when the mouse is released let the dragged item go
-		  // then change all items to not selected
-		  if Equation <> nil then 
-		    drag = false
-		    if left2right = true then 
-		      if X > equalSign_X and Y <> equalSign_Y then Equation.moveSelected
-		    else
-		      if X < equalSign_X and Y <> equalSign_Y then Equation.moveSelected
-		    end if
-		    dim leftList() as PhEd.Expression = Equation.getLeft.getList 
-		    dim rightList() as PhEd.Expression = Equation.getRight.getList 
-		    for i as integer = 0 to leftList.ubound 
-		      leftList(i).selected = false
-		    next
-		    for i as integer = 0 to rightList.ubound 
-		      rightList(i).selected = false
-		    next
-		    FormattedExpression.Invalidate
-		  end if
-		  binaryOpSelected = false
-		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events CheckBox1
@@ -994,109 +862,39 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events PopupMenu1
+#tag Events ViewModeChanger
+	#tag Event
+		Sub Open()
+		  Me.AddRow("Canvas Mode") // default white canvas with drawing tools
+		  Me.AddRow("Educational Mode") // displays the old view for manipulating equations and viewing the tree structure
+		  Me.ListIndex = 0
+		End Sub
+	#tag EndEvent
 	#tag Event
 		Sub Change()
-		  // menu that allows the user to either move or decompose terms
-		  // the decompose should only work for numbers since its functionality is to split a number into powers of ten
-		  // example: decompose(1254) = 1000 + 200 + 50 + 4
-		  if popupmenu1.Text = "Move" then 
-		    showMenu(0)
-		    Equation.moveSelected
-		  elseif popupmenu1.Text = "Decompose" then 
-		    showMenu(0)
-		    Equation.decompose
-		    dim leftList() as PhEd.Expression = Equation.GetLeft.GetList
-		    dim rightList() as PhEd.Expression = Equation.GetRight.GetList
-		    for i as integer = 0 to leftList.Ubound 
-		      leftList(i).selected = false 
-		    next 
-		    for i as integer = 0 to rightList.Ubound 
-		      rightList(i).selected = false 
-		    next 
-		  end if
-		  popupmenu1.ListIndex = 0
-		  FormattedExpression.Invalidate
-		  
+		  viewMode = Me.ListIndex // updates the index of the view mode option
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events functionMenu
+#tag Events Canvas1
 	#tag Event
-		Sub Change()
-		  // menu that contains all the functions from which the user can select
-		  if isValidFunction(functionMenu.Text.toText) then 
-		    Equation.applyFunction(functionMenu.Text.toText)
-		    dim leftList() as PhEd.Expression = Equation.getLeft.getList 
-		    dim rightList() as PhEd.Expression = Equation.getRight.getList 
-		    for i as integer = 0 to leftList.ubound 
-		      leftList(i).selected = false
-		    next
-		    for i as integer = 0 to rightList.ubound 
-		      rightList(i).selected = false
-		    next
+		Sub Paint(g As Graphics, areas() As REALbasic.Rect)
+		  Window1.ExeptionType = 5
+		  theExpr = PhEd.Text2Expression(ExpressionField.text.ToText, g)
+		  if theExpr <> nil then
+		    if not theExpr.isLegal or Window1.ExeptionType < 5 then 
+		    else
+		      DrawTree(g, theExpr)
+		      Dim txt as Text = theExpr.evaluate.ToText
+		    end if
 		  end if
-		  functionMenu.ListIndex = 0
-		  Equation.selected = false
-		  Equation.Simplify
-		  showMenu(0)
-		  FormattedExpression.Invalidate
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events mainMenu
+#tag Events PushButton2
 	#tag Event
-		Sub Change()
-		  // menu to apply changes in the equations such as: functions, inserting terms, multiplying and subtracting  
-		  // currently only function application is working 
-		  if mainMenu.Text = "Apply function " then 
-		    showMenu(1)
-		    FormattedExpression.Invalidate
-		  elseif mainMenu.Text = "Insert in both sides" then 
-		    showMenu(4)
-		  else 
-		    Equation.computeSides 
-		    FormattedExpression.Invalidate
-		    showMenu(0)
-		  end if
-		  mainMenu.ListIndex = 0
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events insertionMenu
-	#tag Event
-		Sub Change()
-		  // menu that shows the user all possible insertions
-		  if insertionMenu.Text = "Add X to both sides " then 
-		    insertButton.Caption = "+" 
-		  elseif insertionMenu.Text = "Subtract X from both sides " then 
-		    insertButton.Caption = "-" 
-		  elseif insertionMenu.Text = "Multiply X with both sides " then 
-		    insertButton.Caption = "*" 
-		  elseif insertionMenu.Text = "Divide both sides by X" then 
-		    insertButton.Caption = "/" 
-		  elseif insertionMenu.Text = "Raise both sides to the power of X" then 
-		    insertButton.Caption = "^" 
-		  end if
-		  showMenu(5)
-		  FormattedExpression.Invalidate
-		  Equation.Simplify
-		  insertionMenu.ListIndex = 0
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events insertButton
-	#tag Event
-		Sub Action()
-		  // insert the term of the textfield
-		  if insertFIeld.Text.ToText <> "" then 
-		    dim inserted as PhEd.Expression = Text2Expression(insertField.Text.ToText)
-		    dim txt as Text = insertButton.Caption.ToText
-		    Equation.Insert2Both(txt,inserted)
-		    FormattedExpression.Invalidate 
-		    insertField.Text = ""
-		    showMenu(4)
-		  end if
+		Sub Action(index as Integer)
+		  drawingMode = index
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -1331,6 +1129,12 @@ End
 		Type="Integer"
 	#tag EndViewProperty
 	#tag ViewProperty
+		Name="ExeptionType"
+		Group="Behavior"
+		InitialValue="0"
+		Type="Integer"
+	#tag EndViewProperty
+	#tag ViewProperty
 		Name="outOfBounds"
 		Group="Behavior"
 		InitialValue="false"
@@ -1349,125 +1153,9 @@ End
 		Type="boolean"
 	#tag EndViewProperty
 	#tag ViewProperty
-		Name="isAddition"
-		Group="Behavior"
-		InitialValue="false"
-		Type="boolean"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="isSubtraction"
-		Group="Behavior"
-		InitialValue="false"
-		Type="boolean"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="isMultiplication"
-		Group="Behavior"
-		InitialValue="false"
-		Type="boolean"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="isDivision"
-		Group="Behavior"
-		InitialValue="false"
-		Type="boolean"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="isLeft"
-		Group="Behavior"
-		InitialValue="false"
-		Type="Boolean"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="Found"
-		Group="Behavior"
-		InitialValue="false"
-		Type="boolean"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="ExceptionType"
+		Name="viewMode"
 		Group="Behavior"
 		InitialValue="0"
 		Type="Integer"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="move"
-		Group="Behavior"
-		InitialValue="false"
-		Type="boolean"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="showMenu"
-		Group="Behavior"
-		InitialValue="false"
-		Type="boolean"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="menu_X"
-		Group="Behavior"
-		Type="double"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="menu_Y"
-		Group="Behavior"
-		Type="double"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="drag"
-		Group="Behavior"
-		Type="boolean"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="drag_X"
-		Group="Behavior"
-		Type="double"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="drag_Y"
-		Group="Behavior"
-		Type="double"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="draggedText"
-		Group="Behavior"
-		Type="Text"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="equalSign_X"
-		Group="Behavior"
-		Type="double"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="equalSign_Y"
-		Group="Behavior"
-		Type="double"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="left2right"
-		Group="Behavior"
-		Type="boolean"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="isADrag"
-		Group="Behavior"
-		Type="Boolean"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="binaryOpSelected"
-		Group="Behavior"
-		InitialValue="false"
-		Type="boolean"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="functionSelected"
-		Group="Behavior"
-		InitialValue="false"
-		Type="boolean"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="mainSelected"
-		Group="Behavior"
-		InitialValue="false"
-		Type="boolean"
 	#tag EndViewProperty
 #tag EndViewBehavior
