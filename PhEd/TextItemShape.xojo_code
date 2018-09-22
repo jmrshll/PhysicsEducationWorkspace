@@ -5,7 +5,7 @@ Inherits StringShape
 		Sub Constructor(g as Graphics, theText as Text, theScale as Double)
 		  //Set the properties of the StringShape. X and Y are set in the Draw method.
 		  Text = theText
-		  myText = theText
+		  myString = theText
 		  TextFont = g.TextFont  
 		  TextSize = g.TextSize
 		  TextUnit = g.TextUnit
@@ -18,6 +18,7 @@ Inherits StringShape
 		  p.Graphics.TextUnit = TextUnit
 		  myWidth=p.Graphics.StringWidth(Text)*Scale //StringWidth returns a Double, the length of the text in pixels
 		  myHeight=p.Graphics.StringHeight(Text, 100000)*Scale //100,000 is the WrapWidth, the width at which text should wrap
+		  myGraphics = g
 		End Sub
 	#tag EndMethod
 
@@ -25,49 +26,97 @@ Inherits StringShape
 		Sub Draw(g As Graphics, xParameter as Double, yParameter as Double)
 		  Self.X = xParameter
 		  Self.Y = yParameter
+		  xPosition = xParameter
+		  yPosition = yParameter
+		  if myString = "=" then 
+		    Window1.equalSign_X = xParameter
+		    Window1.equalSign_Y = yParameter
+		  end if
+		  Window1.outOfBounds = self.X + myWidth > Window1.FormattedExpression.Width
+		  Window1.inBounds = self.X + myWidth < Window1.FormattedExpression.Width*0.8
 		  g.DrawObject(Self)
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub DrawSquare()
+		  if GetWidth < 10 then 
+		    myGraphics.DrawRect(xPosition-4,yPosition-GetHeight,GetWidth+8,1.5*GetHeight)
+		  else 
+		    myGraphics.DrawRect(xPosition,yPosition-GetHeight,GetWidth,1.5*GetHeight)
+		  end if
+		  
 		End Sub
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
 		Function GetHeight() As double
-		  Return myHeight
+		  return myHeight
 		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
 		Function GetWidth() As Double
-		  Return myWidth
+		  Return  myWidth
 		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Sub SetHeight(h as double)
-		  myHeight = h
+		Sub SetX(newX as double)
+		  xPosition = newX 
 		End Sub
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Sub SetWidth(w as double)
-		  myWidth = w 
+		Sub SetY(newY as double)
+		  yPosition = newY
 		End Sub
 	#tag EndMethod
 
 
-	#tag Property, Flags = &h21
-		Private myHeight As Double
+	#tag Property, Flags = &h0
+		myGraphics As Graphics
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
-		myText As Text
+		myHeight As Double
 	#tag EndProperty
 
-	#tag Property, Flags = &h21
-		Private myWidth As Double
+	#tag Property, Flags = &h0
+		myString As Text
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		myText As StringShape
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		myWidth As Double
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		xPosition As double
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		yPosition As double
 	#tag EndProperty
 
 
 	#tag ViewBehavior
+		#tag ViewProperty
+			Name="X"
+			Group="Behavior"
+			InitialValue="0"
+			Type="Double"
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Y"
+			Group="Behavior"
+			InitialValue="0"
+			Type="Double"
+		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Bold"
 			Group="Behavior"
@@ -180,16 +229,16 @@ Inherits StringShape
 			Type="Boolean"
 		#tag EndViewProperty
 		#tag ViewProperty
-			Name="X"
+			Name="xPosition"
 			Group="Behavior"
 			InitialValue="0"
-			Type="Double"
+			Type="double"
 		#tag EndViewProperty
 		#tag ViewProperty
-			Name="Y"
+			Name="yPosition"
 			Group="Behavior"
 			InitialValue="0"
-			Type="Double"
+			Type="double"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="HorizontalAlignment"
@@ -220,7 +269,17 @@ Inherits StringShape
 			#tag EndEnumValues
 		#tag EndViewProperty
 		#tag ViewProperty
-			Name="myText"
+			Name="myWidth"
+			Group="Behavior"
+			Type="Double"
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="myHeight"
+			Group="Behavior"
+			Type="Double"
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="myString"
 			Group="Behavior"
 			Type="Text"
 		#tag EndViewProperty
